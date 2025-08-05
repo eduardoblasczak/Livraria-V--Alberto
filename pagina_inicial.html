@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
     <link rel="stylesheet" href="site.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
     <style>
       html {
       scroll-behavior: smooth;
@@ -53,8 +54,8 @@
  <!-- Image header -->
 <header class="w3-display-container w3-wide" style="padding-bottom:32px;" id="Home">
   <picture>
-    <source media="(max-width: 600px)" srcset=./imagens/livro_do_mes_exemplo.jpg>
-    <img class="w3-image" src=Imagens\livro do mês exemplo.jpg alt="Capa do Livro Verity" style="max-width: 90%; max-height: 600px; display: block; margin: auto;">
+    <source media="(max-width: 600px)" srcset=Imagens\livro_do_mes_exemplo.jpg>
+    <img class="w3-image" src=Imagens\livro_do_mes_exemplo.jpg alt="Capa do Livro Verity" style="max-width: 90%; max-height: 600px; display: block; margin: auto;">
   </picture>
 </header>
 
@@ -158,6 +159,36 @@ function myFunction() {
 }
 </script>
 
+<script>
+// Animação ao rolar a página
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll('.w3-container');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+    
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+    
+    // Menu responsivo
+    function myFunction() {
+        var x = document.getElementById("demo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+});
+</script>
 
 </body>
 </html>
