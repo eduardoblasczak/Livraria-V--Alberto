@@ -40,10 +40,12 @@ O layout foi pensado para ser intuitivo, com uma navegação clara e seções be
 
 <div align="center"> 
   <p>Página do Café Cultural</p>
-  <img src="image_adff72.jpg" alt="Página do Café Cultural" width="80%">
+  <img src="<img width="1861" height="2040" alt="image" src="https://github.com/user-attachments/assets/20afbaf6-7567-4537-a64c-c2995951274e" />
+" alt="Página do Café Cultural" width="80%">
   <br><br>
   <p>Rodapé Padronizado</p>
-  <img src="image_ae06dc.png" alt="Rodapé do site" width="80%">
+  <img src="<img width="1876" height="925" alt="image" src="https://github.com/user-attachments/assets/75b07cb2-c20e-4297-8c0d-ac61e9f2c38f" />
+" alt="Rodapé do site" width="80%">
 </div>
 
 ---
