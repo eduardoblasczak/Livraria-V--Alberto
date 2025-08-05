@@ -4,32 +4,27 @@
   <meta charset="UTF-8">
   <title>Café Cultural - Livraria Vô Alberto</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
-  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
+<body>
 
-<body class="w3-light-white w3-margin">
-
-
-<!-- Navbar -->
-<div class="w3-bar w3-white w3-text-black">
-  <a href="pagina_inicial.html">
-    <img src=./imagens/logo.png style="height:60px;" class="w3-bar-item">
+<div class="w3-bar">
+  <a href="pagina_inicial.html" class="w3-bar-item logo-link">
+    <img src="./imagens/logo.png" alt="Logo">
   </a>
-  <a href="contato.html" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right" style="margin-top:10px;">CONTATO</a>
-  <a href="cafe_cultural.html" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right" style="margin-top:10px;">CAFÉ CULTURAL</a>
-  <a href="livros_mais_vendidos.html" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right" style="margin-top:10px;">LIVROS MAIS VENDIDOS</a>
-  <a href="livro_do_mes.html" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right" style="margin-top:10px;">LIVRO DO MÊS</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large" style="margin-top:10px;" onclick="myFunction()">☰</a>
+  <div class="w3-right w3-hide-small w3-hide-medium">
+    <a href="livro_do_mes.html" class="w3-bar-item w3-button">LIVRO DO MÊS</a>
+    <a href="livros_mais_vendidos.html" class="w3-bar-item w3-button">LIVROS MAIS VENDIDOS</a>
+    <a href="cafe_cultural.html" class="w3-bar-item w3-button">CAFÉ CULTURAL</a>
+    <a href="contato.html" class="w3-bar-item w3-button">CONTATO</a>
+  </div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large mobile-hamburger" onclick="toggleMobileMenu()">☰</a>
 </div>
 
-
-<!-- Navbar Mobile -->
 <div id="demo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
   <a href="pagina_inicial.html" class="w3-bar-item w3-button">INÍCIO</a>
   <a href="livro_do_mes.html" class="w3-bar-item w3-button">LIVRO DO MÊS</a>
@@ -38,71 +33,70 @@
   <a href="contato.html" class="w3-bar-item w3-button">CONTATO</a>
 </div>
 
-
-
-<!-- Conteúdo do Café Cultural -->
-<div class="w3-container w3-padding-64">
-  <div class="w3-content w3-white w3-padding-32">
-    <div class="w3-center">
-      <h2 class="w3-wide">CAFÉ CULTURAL</h2>
-      <p class="w3-opacity"><i>Mais do que um café. Um ponto de encontro para leitores, aromas e boas conversas.</i></p>
+<div class="w3-container">
+  <div class="w3-content">
+    <div class="w3-center" style="padding-top: 32px;">
+      <h2 class="w3-wide">NOSSO CAFÉ CULTURAL</h2>
+      <p class="w3-opacity"><i>Sinta o aroma. Viva a experiência. Apaixone-se pela pausa.</i></p>
     </div>
 
-
-    <p class="w3-text-black" style="line-height: 1.8; font-size: 17px;">
-      Imagine um lugar onde o cheiro de café recém-passado se mistura com páginas viradas, risadas discretas e pensamentos inspirados.
-      <br><br>
-      O Café Cultural da Livraria Vô Alberto é um espaço acolhedor, ideal para relaxar, estudar ou simplesmente aproveitar um momento de paz. Servimos uma variedade deliciosa de cafés quentinhos, preparados com carinho artesanal, para acompanhar seus momentos de leitura.
-      <br><br>
-      Nosso cardápio inclui lanches salgados fresquinhos, tortas doces e caseiras, bolos fofinhos e quitutes especiais feitos com ingredientes selecionados.
-      <br><br>
-      Seja para ler um bom livro, trocar ideias com amigos, ou saborear um espresso enquanto observa o movimento da cidade, o Café Cultural é o ambiente perfeito para quem ama cultura, aconchego e sabores autênticos.
-    </p>
-
-
-    <div class="w3-row-padding w3-margin-top">
-      <div class="w3-third w3-margin-bottom">
-        <img src=Imagens\Café_7.jpg alt="Café especial" class="w3-hover-opacity" style="width:100%">
-        <p class="w3-center"><b>Cafés Especiais</b><br>Do espresso ao cappuccino, tudo feito com grãos selecionados.</p>
+    <div class="intro-cafe-container">
+      <div class="intro-cafe-image">
+        <img src="./imagens/Cafe6.jpg" alt="Ambiente do Café da Livraria Vô Alberto">
       </div>
-      <div class="w3-third w3-margin-bottom">
-        <img src=./imagens/Salgado_3.jpg alt="Salgados artesanais" class="w3-hover-opacity" style="width:100%">
-        <p class="w3-center"><b>Lanches Artesanais</b><br>Pães, tortas salgadas e sanduíches preparados na hora.</p>
+      <div class="intro-cafe-text">
+        <p>
+          Imagine um refúgio onde o aroma de café especial se mistura com o cheiro de livros novos. Um lugar para desacelerar, encontrar amigos e deixar a inspiração fluir.
+        </p>
+        <p>
+          No <strong>Café Cultural Vô Alberto</strong>, cada detalhe é um convite para uma pausa reconfortante. Nossos baristas transformam grãos selecionados em pura arte, enquanto nossa cozinha prepara delícias que aquecem a alma.
+        </p>
+        <p>
+          <strong>Permita-se este momento.</strong> Um bom livro, um café perfeito e um ambiente que abraça. Você merece essa experiência.
+        </p>
       </div>
-      <div class="w3-third w3-margin-bottom">
-        <img src=./imagens/torta.png alt="Torta caseira" class="w3-hover-opacity" style="width:89%">
-        <p class="w3-center"><b>Tortas e Doces</b><br>Receitas caseiras que combinam perfeitamente com uma boa leitura.</p>
+    </div>
+
+    <div class="cafe-card-container">
+      <div class="cafe-card">
+        <img src="Imagens/Café_7.jpg" alt="Café especial">
+        <h3>CAFÉS QUE CONTAM HISTÓRIAS</h3>
+        <p>Do espresso intenso ao latte cremoso, uma experiência sensorial única.</p>
+      </div>
+      <div class="cafe-card">
+        <img src="./imagens/Salgado_3.jpg" alt="Salgados artesanais">
+        <h3>SABORES QUE ABRAÇAM</h3>
+        <p>A combinação perfeita de crocância e recheios suculentos feitos na hora.</p>
+      </div>
+      <div class="cafe-card">
+        <img src="./imagens/torta.png" alt="Torta caseira">
+        <h3>DOCES MEMÓRIAS</h3>
+        <p>Receitas de família que transformam qualquer leitura em um momento inesquecível.</p>
       </div>
     </div>
   </div>
 </div>
 
+<footer class="w3-container w3-center" style="margin-top: 64px; background-color: var(--cor-primaria); color: var(--cor-branco); padding: 40px 16px;">
+  <div>
+    <p style="color: var(--cor-secundaria);">Siga-nos nas redes sociais e entre em contato</p>
+    <a href="https://www.facebook.com/livrariaavoalberto/" class="w3-button" title="Facebook"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.instagram.com/livrariavoalberto/" class="w3-button" title="Instagram"><i class="fa fa-instagram"></i></a>
+    <a href="https://wa.me/4931941930" class="w3-button" title="WhatsApp"><i class="fa fa-whatsapp"></i></a>
+    <a href="https://maps.app.goo.gl/your-google-maps-link" class="w3-button" title="Localização"><i class="fa fa-map-marker"></i></a>
+  </div>
 
-    <!-- Footer -->
-  <footer class="w3-container w3-brown w3-center w3-margin-top">
-    <div class="w3-row">
-      <div class="w3-col s12">
-        <p>Siga-nos nas redes sociais e entre em contato</p>
-        <a href="https://www.facebook.com/livrariaavoalberto/" class="w3-button w3-large" title="Facebook"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-        <a href="https://www.instagram.com/livrariavoalberto/" class="w3-button w3-large" title="Instagram"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-        <a href="https://wa.me/4931941930" class="w3-button w3-large" title="WhatsApp"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
-        <a href="https://maps.google.com/?q=R. São Jacó, 194, Itapiranga - SC" class="w3-button w3-large" title="Localização"><i class="fa fa-map-marker w3-hover-opacity"></i></a>
-      </div>
-    </div>
-   
-    <div class="w3-padding-16">
-      <p><i class="fa fa-map-pin"></i> R. São Jacó, 194, Itapiranga - SC</p>
-      <p><i class="fa fa-phone"></i> (49) 931941930</p>
-      <p><i class="fa fa-envelope"></i> contato@livrariavoalberto.com.br</p>
-    </div>
-   
-    <p class="w3-small">Livraria Vô Alberto - Todos os direitos reservados © 2025</p>
-  </footer>
+  <div style="padding-top: 24px; padding-bottom: 24px;">
+    <p style="color: var(--cor-secundaria);"><i class="fa fa-map-pin"></i> R. São Jacó, 194, Itapiranga - SC</p>
+    <p style="color: var(--cor-secundaria);"><i class="fa fa-phone"></i> (49) 931941930</p>
+    <p style="color: var(--cor-secundaria);"><i class="fa fa-envelope"></i> contato@livrariavoalberto.com.br</p>
+  </div>
 
+  <p style="font-size: 0.9rem; color: var(--cor-destaque);">Livraria Vô Alberto - Todos os direitos reservados © 2025</p>
+</footer>
 
-<!-- Script do menu mobile -->
 <script>
-function myFunction() {
+function toggleMobileMenu() {
   var x = document.getElementById("demo");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
@@ -112,7 +106,5 @@ function myFunction() {
 }
 </script>
 
-
 </body>
 </html>
-
