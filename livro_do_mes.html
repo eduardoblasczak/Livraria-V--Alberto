@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Livro do Mês - Livraria Vô Alberto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html { scroll-behavior: smooth; }
+    h1,h2,h3,h4,h5,h6 { font-family: "Roboto" }
+    body { font-family: "Source Sans Pro" }
+  </style>
+</head>
+<body class="w3-light-white w3-margin">
+
+<!-- Navbar -->
+<div class="w3-bar w3-white w3-text-black">
+  <a href="pagina_inicial.html">
+    <img src="./imagens/logo.png" alt="Logo" style="height:60px;" class="w3-bar-item">
+  </a>
+  <a href="contato.html" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right" style="margin-top:10px;">CONTATO</a>
+  <a href="cafe_cultural.html" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right" style="margin-top:10px;">CAFÉ CULTURAL</a>
+  <a href="livros_mais_vendidos.html" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right" style="margin-top:10px;">LIVROS MAIS VENDIDOS</a>
+  <a href="livro_do_mes.html" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right" style="margin-top:10px;">LIVRO DO MÊS</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large" style="margin-top:10px;" onclick="myFunction()">☰</a>
+</div>
+
+<div id="demo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+  <a href="pagina_inicial.html" class="w3-bar-item w3-button">INÍCIO</a>
+  <a href="livro_do_mes.html" class="w3-bar-item w3-button">LIVRO DO MÊS</a>
+  <a href="livros_mais_vendidos.html" class="w3-bar-item w3-button">LIVROS MAIS VENDIDOS</a>
+  <a href="cafe_cultural.html" class="w3-bar-item w3-button">CAFÉ CULTURAL</a>
+  <a href="contato.html" class="w3-bar-item w3-button">CONTATO</a>
+</div>
+
+
+<!-- Conteúdo -->
+<div class="w3-container w3-padding-64">
+  <div class="w3-content">
+    <h2 class="w3-center w3-wide">LIVRO DO MÊS</h2>
+
+    <!-- Verity - Livro do Mês -->
+    <div class="w3-row-padding w3-margin-top">
+      <div class="w3-third">
+        <img src=./imagens/Verity.jpg style="width:100%" alt="Verity">
+      </div>
+      <div class="w3-twothird">
+        <h3>Verity <span class="w3-tag w3-red w3-round-small">Livro do Mês</span></h3>
+        <p class="w3-opacity">Autora: Colleen Hoover</p>
+        <p>
+          Um suspense psicológico intenso, escrito por Colleen Hoover, que prende o leitor do início ao fim.
+          Uma trama envolvente onde segredos obscuros, reviravoltas perturbadoras e emoções cruas mantêm você vidrado em cada página.
+        </p>
+        <p>★★★★★</p>
+        <p class="w3-opacity" style="margin-top: 8px;">★ 4.8 / 5 – Leitura altamente recomendada para quem ama thrillers com um toque emocional.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Rodapé -->
+<footer class="w3-container w3-brown w3-center w3-margin-top">
+  <div class="w3-row">
+    <div class="w3-col s12">
+      <p>Siga-nos nas redes sociais e entre em contato</p>
+      <a href="https://www.facebook.com/livrariaavoalberto/" class="w3-button w3-large" title="Facebook"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/livrariavoalberto/" class="w3-button w3-large" title="Instagram"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://wa.me/4931941930" class="w3-button w3-large" title="WhatsApp"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+      <a href="https://maps.google.com/?q=R. São Jacó, 194, Itapiranga - SC" class="w3-button w3-large" title="Localização"><i class="fa fa-map-marker w3-hover-opacity"></i></a>
+    </div>
+  </div>
+
+  <div class="w3-padding-16">
+    <p><i class="fa fa-map-pin"></i> R. São Jacó, 194, Itapiranga - SC</p>
+    <p><i class="fa fa-phone"></i> (49) 931941930</p>
+    <p><i class="fa fa-envelope"></i> contato@livrariavoalberto.com.br</p>
+  </div>
+
+  <p class="w3-small">Livraria Vô Alberto - Todos os direitos reservados © 2025</p>
+</footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+
